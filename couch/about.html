@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Comfy and Chic Home</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Georgia', serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f8f6f3;
+        }
+
+        header {
+            background: linear-gradient(135deg, #8B4513, #D2691E);
+            color: white;
+            padding: 1rem 0;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        header .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            font-weight: bold;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 2rem;
+            font-size: 1.1rem;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #FFE4B5;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+        }
+
+        .page-header {
+            background: linear-gradient(135deg, #D2691E, #8B4513);
+            color: white;
+            text-align: center;
+            padding: 4rem 2rem;
+        }
+
+        .page-header h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        .content-section {
+            background: white;
+            margin: 3rem auto;
+            padding: 3rem;
+            border-radius: 15px;
+            box-shadow: 0 8px 30px rgba(0,0,0,0.1);
+        }
+
+        .content-section h3 {
+            color: #8B4513;
+            font-size: 1.8rem;
+            margin-bottom: 1.5rem;
+            border-bottom: 3px solid #D2691E;
+            padding-bottom: 0.5rem;
+        }
+
+        .content-section p {
+            font-size: 1.1rem;
+            margin-bottom: 1.5rem;
+            color: #555;
+        }
+
+        .story-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 3rem auto;
+        }
+
+        .story-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 8px 30px rgba(0,0,0,0.1);
+        }
+
+        .story-card h4 {
+            color: #8B4513;
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+        }
+
+        footer {
+            background: #8B4513;
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+            margin-top: 4rem;
+        }
+
+        footer p {
+            margin: 0.5rem 0;
+        }
+
+        @media (max-width: 768px) {
+            header .container {
+                flex-direction: column;
+                gap: 1rem;
+            }
+            
+            nav a {
+                margin: 0 1rem;
+            }
+            
+            .page-header h2 {
+                font-size: 2rem;
+            }
+            
+            h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1><a href="index.html" style="color: white; text-decoration: none;">Comfy and Chic Home</a></h1>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="page-header">
+        <h2>About Comfy and Chic Home</h2>
+        <p>Your trusted partner in finding the perfect couch for your home</p>
+    </div>
+
+    <div class="container">
+        <div class="content-section">
+            <h3>Our Story</h3>
+            <p>Welcome to Comfy and Chic Home, where comfort meets elegance in every piece we recommend. Founded with a passion for beautiful, functional furniture, we've dedicated ourselves to helping homeowners discover the perfect couch that transforms their living space into a sanctuary of style and comfort.</p>
+            
+            <p>As furniture enthusiasts and home design lovers, we understand that choosing the right couch is more than just a purchase—it's an investment in your daily comfort, your home's aesthetic, and your family's gathering place. That's why we've built relationships with the industry's most trusted furniture brands and manufacturers.</p>
+        </div>
+
+        <div class="content-section">
+            <h3>What We Do</h3>
+            <p>Through our carefully curated affiliate marketing platform, we connect you directly with premium couch collections from top furniture brands. Our approach is simple: we do the research, compare the options, and present you with only the highest-quality pieces that meet our strict standards for comfort, durability, and style.</p>
+            
+            <p>Every couch we feature has been evaluated by our team of furniture experts and design professionals. We consider factors like construction quality, fabric durability, comfort ratings, and overall value to ensure you're getting the best possible furniture for your investment.</p>
+        </div>
+
+        <div class="story-grid">
+            <div class="story-card">
+                <h4>🎯 Our Mission</h4>
+                <p>To make finding the perfect couch simple, affordable, and enjoyable by connecting you with the best furniture deals and highest-quality pieces from trusted brands.</p>
+            </div>
+            <div class="story-card">
+                <h4>💡 Our Vision</h4>
+                <p>To be your go-to destination for couch shopping, where expert curation meets unbeatable value, helping you create the home of your dreams.</p>
+            </div>
+            <div class="story-card">
+                <h4>🤝 Our Promise</h4>
+                <p>We promise to only recommend furniture we would choose for our own homes, ensuring every piece meets our high standards for quality and style.</p>
+            </div>
+        </div>
+
+        <div class="content-section">
+            <h3>Why Choose Our Recommendations?</h3>
+            <p><strong>Expert Curation:</strong> Our team spends countless hours researching and testing furniture options to bring you only the best selections.</p>
+            
+            <p><strong>Exclusive Partnerships:</strong> Our affiliate relationships with top furniture brands mean you get access to special promotions, early releases, and exclusive deals.</p>
+            
+            <p><strong>Quality Assurance:</strong> Every couch we recommend undergoes our rigorous quality assessment, focusing on construction, materials, and long-term durability.</p>
+            
+            <p><strong>Style Expertise:</strong> Our design team stays current with the latest trends while respecting timeless classics, ensuring our recommendations will look great in your home for years to come.</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>Contact us at info@comfychichome.com | (123) 456-7890</p>
+        <p>&copy; 2025 Comfy and Chic Home. All rights reserved.</p>
+    </footer>
+</body>
+</html>

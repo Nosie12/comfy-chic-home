@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="p:domain_verify" content="abb58184062079b3738027d46f7e1585"/>
+    <title>Comfy and Chic Home - Premium Couches & Home Decor</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Georgia', serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f8f6f3;
+        }
+
+        header {
+            background: linear-gradient(135deg, #8B4513, #D2691E);
+            color: white;
+            padding: 1rem 0;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        header .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            font-weight: bold;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 2rem;
+            font-size: 1.1rem;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #FFE4B5;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+        }
+
+        .hero {
+            background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600"><rect fill="%23D2691E" width="1200" height="600"/><rect fill="%23F4A460" x="100" y="150" width="300" height="200" rx="20"/><rect fill="%238B4513" x="150" y="180" width="200" height="50" rx="5"/></svg>');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-align: center;
+            padding: 6rem 2rem;
+        }
+
+        .hero h2 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            text-shadow: 3px 3px 6px rgba(0,0,0,0.5);
+        }
+
+        .hero p {
+            font-size: 1.3rem;
+            max-width: 600px;
+            margin: 0 auto;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        .content-wrapper {
+            display: grid;
+            grid-template-columns: 1fr 300px;
+            gap: 3rem;
+            margin: 3rem auto;
+            max-width: 1200px;
+            padding: 0 2rem;
+        }
+
+        .main-content {
+            background: white;
+            padding: 2.5rem;
+            border-radius: 15px;
+            box-shadow: 0 8px 30px rgba(0,0,0,0.1);
+        }
+
+        .main-content h2 {
+            color: #8B4513;
+            font-size: 2.2rem;
+            margin-bottom: 1.5rem;
+            border-bottom: 3px solid #D2691E;
+            padding-bottom: 0.5rem;
+        }
+
+        .main-content p {
+            font-size: 1.1rem;
+            margin-bottom: 1.5rem;
+            color: #555;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background: linear-gradient(135deg, #D2691E, #8B4513);
+            color: white;
+            padding: 1rem 2rem;
+            text-decoration: none;
+            border-radius: 50px;
+            font-size: 1.1rem;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(139, 69, 19, 0.3);
+        }
+
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(139, 69, 19, 0.4);
+        }
+
+        .sidebar {
+            background: white;
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 8px 30px rgba(0,0,0,0.1);
+            height: fit-content;
+        }
+
+        .sidebar h3 {
+            color: #8B4513;
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            border-bottom: 2px solid #D2691E;
+            padding-bottom: 0.5rem;
+        }
+
+        .sidebar p {
+            color: #666;
+            font-size: 1rem;
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 3rem auto;
+            max-width: 1200px;
+            padding: 0 2rem;
+        }
+
+        .feature-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 8px 30px rgba(0,0,0,0.1);
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .feature-card h3 {
+            color: #8B4513;
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+        }
+
+        footer {
+            background: #8B4513;
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+            margin-top: 4rem;
+        }
+
+        footer p {
+            margin: 0.5rem 0;
+        }
+
+        @media (max-width: 768px) {
+            .content-wrapper {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+            
+            header .container {
+                flex-direction: column;
+                gap: 1rem;
+            }
+            
+            nav a {
+                margin: 0 1rem;
+            }
+            
+            .hero h2 {
+                font-size: 2rem;
+            }
+            
+            h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Comfy and Chic Home</h1>
+            <nav>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="hero">
+        <h2>Welcome to Comfy and Chic Home</h2>
+        <p>Your destination for the most stylish and comfortable couches that transform your living space into a haven of elegance.</p>
+    </div>
+
+    <div class="content-wrapper">
+        <div class="main-content">
+            <h2>Premium Couch Collection</h2>
+            <p>Discover our handpicked selection of premium couches that perfectly blend comfort with sophisticated design. Each piece in our collection has been carefully chosen for its exceptional quality, durability, and style.</p>
+            
+            <p>Whether you're looking for a sleek modern sectional, a classic leather sofa, or a cozy loveseat, we partner with the best furniture brands to bring you couches that will become the centerpiece of your home.</p>
+            
+            <p>Our affiliate partnerships allow us to offer you exclusive deals and the latest collections from top furniture manufacturers, ensuring you get the best value for your investment in comfort and style.</p>
+            
+            <a href="#" class="cta-button">Shop Premium Couches</a>
+        </div>
+
+        <aside class="sidebar">
+            <h3>Why Choose Us?</h3>
+            <p>At Comfy and Chic Home, we specialize in curating the finest selection of couches and home furnishings. Our expertise in affiliate marketing means we can connect you directly with the best deals from trusted furniture brands, saving you time and money while ensuring quality.</p>
+        </aside>
+    </div>
+
+    <div class="features">
+        <div class="feature-card">
+            <h3>🛋️ Premium Quality</h3>
+            <p>Every couch we recommend meets our strict standards for comfort, durability, and craftsmanship.</p>
+        </div>
+        <div class="feature-card">
+            <h3>💰 Best Deals</h3>
+            <p>Our affiliate partnerships give you access to exclusive discounts and promotions you won't find elsewhere.</p>
+        </div>
+        <div class="feature-card">
+            <h3>🎨 Style Expertise</h3>
+            <p>Our team of design experts helps you find the perfect couch to match your home's aesthetic.</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>Contact us at info@comfychichome.com | (123) 456-7890</p>
+        <p>&copy; 2025 Comfy and Chic Home. All rights reserved.</p>
+    </footer>
+</body>
+</html>
