@@ -35,7 +35,7 @@ nav a:hover {
     background-size: cover; /* Ensures the image covers the entire area */
     background-position: center; /* Centers the image */
     background-repeat: no-repeat; /* Prevents tiling */
-    color: #fff;
+    color: #efff;
     text-align: center;
     padding: 8rem 1rem; /* Adjust padding for spacing */
     display: flex;
